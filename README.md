@@ -1,39 +1,40 @@
 # node-react-typescript-test
+here you can find me: https://github.com/ahmadaldali/node-react-typescript-test.git
+
 
 # HOW TO RUN THE PROJECT
 # ----------------------------------------------------------
 
 # HERE SOME TIPS
 
-If you have the images, follow the next:
-- Check from the generated images by run the following command (to ensure from the   
-  images) :
-  sudo docker images
-  Then, you should see 2 images:
-  1- firstdockerserver: server image
-  2- firstdockerclient: client image
+- If you have the images, follow the next:
+   Check from the images by run the following command:
+   sudo docker images
+   Then, you should see 2 images:
+      1- ahmadcodingtest/my-private-repository:server (server image)
+      2- ahmadcodingtest/my-private-repository:client (client image)
 
-- Run the server by executing the following command:
-   sudo docker run -p 5000:5000 firstdockerserver
-   OR with another port for host port 
-   sudo docker run -p 5001:5000 firstdockerserver
-
-- Run the client by executing the following command:
-   sudo docker run -p 3000:3000 firstdockerclient
-
-If you don't have the images, then build it firstly.
-From the root of project, run the following command:
+- If you don't have the images, then build it firstly.
+   From the root of the project, run the following command:
    sudo docker-compose up --build
-   it Will generate two images.
-   One for the server with name "firstdockerserver"
-   The Second for the client with name "firstdockerclient"
+   It Will generate two images.
+      One for the server with name "firstdockerserver"
+      The Second for the client with name "firstdockerclient"
 
+- Run the images
+   Run the server by executing the following command:
+      sudo docker run -p 5000:5000 "set here the name of server image"
+      OR with another port for host port 
+      sudo docker run -p 5001:5000 "set here the name of server image"
+
+   Run the client by executing the following command:
+      sudo docker run -p 3000:3000 "set here the name of client image"
 
 
 # --------------------------------------------------------------
-Here if you want to run the project without the docker.
-go to server directory:
+# Here if you want to run the project without the docker.
 
+Go to server directory:
 - yarn build:server: build server project and copy partner json file to build folder
 - yarn build:client: build client project
 
