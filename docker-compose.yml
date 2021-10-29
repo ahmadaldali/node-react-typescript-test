@@ -7,12 +7,12 @@ services:
     build:
       context: ./server
       dockerfile: ./Dockerfile
-    image: "coding-test/server"
+    image: "firstdockerserver"
     
   client:
     build:
       context: ./client
       dockerfile: ./Dockerfile
-    image: "coding-test/client"
+    image: "firstdockerclient"
     links:
       - "server"
