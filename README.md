@@ -9,6 +9,9 @@ If you have the images, follow the next:
 - Check from the generated images by run the following command (to ensure from the   
   images) :
   sudo docker images
+  Then, you should see 2 images:
+  1- firstdockerserver: server image
+  2- firstdockerclient: client image
 
 - Run the server by executing the following command:
    sudo docker run -p 5000:5000 firstdockerserver
@@ -24,7 +27,6 @@ From the root of project, run the following command:
    it Will generate two images.
    One for the server with name "firstdockerserver"
    The Second for the client with name "firstdockerclient"
-
 
 
 
