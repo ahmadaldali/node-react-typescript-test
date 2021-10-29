@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  server:
+    env_file:
+        "./server/.env"
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+    image: "coding-test/server"
+    
+  client:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    image: "coding-test/client"
+    links:
+      - "server"

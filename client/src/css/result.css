@@ -1,0 +1,32 @@
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+li {
+    counter-increment: my-awesome-counter;
+    margin: 0.5rem;
+    margin-left: 1rem;
+}
+
+li::before {
+    content: counter(my-awesome-counter);
+    background: #662974;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+ol ol li::before {
+    background: #DE51FF;
+}
+
+.result {
+    margin-top: 2%;
+    margin-left: 20%;
+}
